@@ -51,7 +51,7 @@ namespace ASAP {
 	{
 		_Time = d;
 	}
-	
+
 	DateTime JobStruct::LastRun()
 	{
 		return _LastRun;

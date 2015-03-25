@@ -1,26 +1,7 @@
-﻿Build started 15-12-2014 15:00:49.
+﻿Build started 08-03-2015 13:15:34.
      1>Project "E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\ASAP\ASAP.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\ASAP.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
-         stdafx.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ASAP.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib ASAP.cpp AssemblyInfo.cpp DataBackUp.cpp FlatBackup.cpp JobHandler.cpp JobStruct.cpp MainForm.cpp OneToOneBackUp.cpp
-         ASAP.cpp
-     1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(20): warning C4677: 'Jobs': signature of non-private member contains assembly private type 'ASAP::JobHandler'
-                 e:\projects\freelancer\vss\asap\asap\asap\asap\jobHandler.h(8) : see declaration of 'ASAP::JobHandler'
-     1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(31): warning C4677: 'Job': signature of non-private member contains assembly private type 'ASAP::JobStruct'
-                 e:\projects\freelancer\vss\asap\asap\asap\asap\JobStruct.h(8) : see declaration of 'ASAP::JobStruct'
-         AssemblyInfo.cpp
-     1>AssemblyInfo.cpp(40): warning C4947: 'RequestMinimum' : marked as obsolete
-                 Message: 'Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.'
-         DataBackUp.cpp
-     1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(20): warning C4677: 'Jobs': signature of non-private member contains assembly private type 'ASAP::JobHandler'
-                 e:\projects\freelancer\vss\asap\asap\asap\asap\jobHandler.h(8) : see declaration of 'ASAP::JobHandler'
-     1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(31): warning C4677: 'Job': signature of non-private member contains assembly private type 'ASAP::JobStruct'
-                 e:\projects\freelancer\vss\asap\asap\asap\asap\JobStruct.h(8) : see declaration of 'ASAP::JobStruct'
-     1>e:\projects\freelancer\vss\asap\asap\asap\asap\DataBackUp.h(10): warning C4570: 'ASAP::DataBackUp' : is not explicitly declared as abstract but has abstract functions
-                 'void ASAP::DataBackUp::StartBackUp(void)' : is abstract
-                 e:\projects\freelancer\vss\asap\asap\asap\asap\DataBackUp.h(13) : see declaration of 'ASAP::DataBackUp::StartBackUp'
-     1>DataBackUp.cpp(47): warning C4101: 'pe' : unreferenced local variable
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ASAP.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib FlatBackup.cpp OneToOneBackUp.cpp
          FlatBackup.cpp
      1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(20): warning C4677: 'Jobs': signature of non-private member contains assembly private type 'ASAP::JobHandler'
                  e:\projects\freelancer\vss\asap\asap\asap\asap\jobHandler.h(8) : see declaration of 'ASAP::JobHandler'
@@ -29,22 +10,6 @@
      1>e:\projects\freelancer\vss\asap\asap\asap\asap\DataBackUp.h(10): warning C4570: 'ASAP::DataBackUp' : is not explicitly declared as abstract but has abstract functions
                  'void ASAP::DataBackUp::StartBackUp(void)' : is abstract
                  e:\projects\freelancer\vss\asap\asap\asap\asap\DataBackUp.h(13) : see declaration of 'ASAP::DataBackUp::StartBackUp'
-         JobHandler.cpp
-         JobStruct.cpp
-     1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(20): warning C4677: 'Jobs': signature of non-private member contains assembly private type 'ASAP::JobHandler'
-                 e:\projects\freelancer\vss\asap\asap\asap\asap\jobHandler.h(8) : see declaration of 'ASAP::JobHandler'
-     1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(31): warning C4677: 'Job': signature of non-private member contains assembly private type 'ASAP::JobStruct'
-                 e:\projects\freelancer\vss\asap\asap\asap\asap\JobStruct.h(8) : see declaration of 'ASAP::JobStruct'
-     1>e:\projects\freelancer\vss\asap\asap\asap\asap\DataBackUp.h(10): warning C4570: 'ASAP::DataBackUp' : is not explicitly declared as abstract but has abstract functions
-                 'void ASAP::DataBackUp::StartBackUp(void)' : is abstract
-                 e:\projects\freelancer\vss\asap\asap\asap\asap\DataBackUp.h(13) : see declaration of 'ASAP::DataBackUp::StartBackUp'
-     1>JobStruct.cpp(348): warning C4101: 'pe' : unreferenced local variable
-     1>JobStruct.cpp(390): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-         MainForm.cpp
-     1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(20): warning C4677: 'Jobs': signature of non-private member contains assembly private type 'ASAP::JobHandler'
-                 e:\projects\freelancer\vss\asap\asap\asap\asap\jobHandler.h(8) : see declaration of 'ASAP::JobHandler'
-     1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(31): warning C4677: 'Job': signature of non-private member contains assembly private type 'ASAP::JobStruct'
-                 e:\projects\freelancer\vss\asap\asap\asap\asap\JobStruct.h(8) : see declaration of 'ASAP::JobStruct'
          OneToOneBackUp.cpp
      1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(20): warning C4677: 'Jobs': signature of non-private member contains assembly private type 'ASAP::JobHandler'
                  e:\projects\freelancer\vss\asap\asap\asap\asap\jobHandler.h(8) : see declaration of 'ASAP::JobHandler'
@@ -57,7 +22,7 @@
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /analyze- /errorReport:prompt "C:\Users\m i c r o    R\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cpp"
          .NETFramework,Version=v4.5.AssemblyAttributes.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\Debug\ASAP.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\ASAP.MainForm.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\Debug\ASAP.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\Debug\ASAP.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\ASAP.MainForm.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\Debug\ASAP.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 Debug\app.res
          Debug\ASAP.obj
          Debug\AssemblyInfo.obj
          Debug\DataBackUp.obj
@@ -68,9 +33,9 @@
          Debug\OneToOneBackUp.obj
          Debug\stdafx.obj
          "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
-         ASAP.vcxproj -> E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\Debug\ASAP.exe
-     1>Done Building Project "E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\ASAP\ASAP.vcxproj" (Build target(s)).
+     1>Debug\ASAP.obj : fatal error LNK1112: module machine type 'X86' conflicts with target machine type 'x64'
+     1>Done Building Project "E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\ASAP\ASAP.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:07.66
+Time Elapsed 00:00:03.06

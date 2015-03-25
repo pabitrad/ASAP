@@ -34,7 +34,7 @@ namespace ASAP {
 
 	void MainForm::markJobCompleted()
 	{
-		MessageBox::Show("Job completed successfully", "Complete");
+		//MessageBox::Show("Job completed successfully", "Complete");
 		resetCurrentOperation();
 	}
 

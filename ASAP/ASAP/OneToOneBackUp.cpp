@@ -8,13 +8,15 @@ namespace ASAP {
 
 	void OneToOneBackUp::StartBackUp(void)
 	{
-		if (_job != nullptr)
-		{
-			String^ targetLocation = GetTagetLocation();
-			String^ sourcePath = (String ^)(_job->Files()->ToArray()[0]);
+		performVSSBackup();
 
-			DeepCopy(gcnew DirectoryInfo(sourcePath), gcnew DirectoryInfo(targetLocation));
-		}
+		//if (_job != nullptr)
+		//{
+		//	String^ targetLocation = GetTagetLocation();
+		//	String^ sourcePath = (String ^)(_job->Files()->ToArray()[0]);
+
+		//	DeepCopy(gcnew DirectoryInfo(sourcePath), gcnew DirectoryInfo(targetLocation));
+		//}
 	}
 
 	String^ OneToOneBackUp::GetTagetLocation()

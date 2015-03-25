@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "FlatBackup.h"
+#include "vssBackup.h"
 
 namespace ASAP {
 	FlatBackup::FlatBackup(JobStruct^ job) : DataBackUp(job)
@@ -14,16 +15,18 @@ namespace ASAP {
 
 	void FlatBackup::StartBackUp(void)
 	{
-		if (_job != nullptr)
-		{
-			ArrayList^ sourceLocations = _job->Files();
-			for each(String^ sourceLocation in sourceLocations)
-			{
-				String^ targetLocation = GetTagetLocation(sourceLocation);
+		performVSSBackup();
 
-				DeepCopy(gcnew DirectoryInfo(sourceLocation), gcnew DirectoryInfo(targetLocation));
-			}
-		}
+		//if (_job != nullptr)
+		//{
+		//	ArrayList^ sourceLocations = _job->Files();
+		//	for each(String^ sourceLocation in sourceLocations)
+		//	{
+		//		String^ targetLocation = GetTagetLocation(sourceLocation);
+
+		//		DeepCopy(gcnew DirectoryInfo(sourceLocation), gcnew DirectoryInfo(targetLocation));
+		//	}
+		//}
 	}
 
 	String^ FlatBackup::GetTagetLocation(String^ sourceLocation)

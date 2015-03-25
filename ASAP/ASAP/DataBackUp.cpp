@@ -1,5 +1,12 @@
 #include "stdafx.h"
 #include "DataBackUp.h"
+#include "COptions.h"
+#include "vssBackup.h"
+
+using namespace System::Runtime::InteropServices;
+using namespace System::Diagnostics;
+using namespace System::Reflection;
+using namespace System::IO;
 
 namespace ASAP {
 	DataBackUp::DataBackUp(JobStruct^ job)
@@ -22,7 +29,6 @@ namespace ASAP {
 				for each (DirectoryInfo^ dir in directories)
 				{
 					DirectoryInfo^ SubDir = target->CreateSubdirectory(dir->Name);
-					//SubDir->SetAccessControl(gcnew DirectorySecurity(dir->FullName, AccessControlSections::All));
 
 					DeepCopy(dir, SubDir);
 				}
@@ -82,5 +88,13 @@ namespace ASAP {
 			//Log error
 			return false;
 		}
+	}
+
+	void DataBackUp::performVSSBackup()
+	{
+		String^ strArgument = "/" + _job->Name();
+		String^ exePath = Path::GetDirectoryName(Assembly::GetEntryAssembly()->Location) + "\\VSSCopy.Exe";
+
+		Process::Start(exePath, strArgument);
 	}
 }

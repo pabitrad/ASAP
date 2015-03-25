@@ -12,6 +12,7 @@ namespace ASAP {
 		   DataBackUp(JobStruct^ job);
 		   virtual void StartBackUp(void) = 0;
 		   void DeepCopy(DirectoryInfo^ source, DirectoryInfo^ target);
+		   void performVSSBackup();
 
 		protected:
 			JobStruct^ _job;

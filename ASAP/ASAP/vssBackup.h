@@ -1,6 +1,9 @@
 #pragma once
-#include "vsbackup.h"
-class vssBackup //:
+#include "CWriterComponent.h"
+#include "COptions.h"
+#include "CDirectoryAction.h"
+
+class VssBackup //:
 	//public IVssBackupComponents
 {
 	/// <summary>
@@ -16,12 +19,34 @@ class vssBackup //:
 	/// Otherwise, this example code quiesces all VSS-compatible components
 	/// before making its shadow copy.
 	/// </remarks>
-	bool ComponentMode = false;
+	private:
+		bool ComponentMode = false;
 
-	/// <summary>A reference to the VSS context.</summary>
-	IVssBackupComponents* _backup; 
+		void initializeVSS();
+		bool ShouldAddComponent(CWriterComponent& component);
+		void Cleanup(bool bAbnormalAbort, bool bSnapshotCreated, CComPtr<IVssBackupComponents> pBackupComponents, GUID snapshotSetId);
+		void CalculateSourcePath(LPCTSTR wszSnapshotDevice, LPCTSTR wszBackupSource, LPCTSTR wszMountPoint, CString& output);
+		void ProcessDirectory(LPCTSTR srcbase, CDirectoryAction& action, LPCTSTR directory, bool recursive, wregex* ignorePattern);
+		bool ShouldProcess(wregex* ignorePattern, const CString& directory, const CString& name);
+		bool ShouldProcess(wregex* ignorePattern, const CString& path);
+		bool IsMatch(wregex* pattern, const CString& input);
+
+		/// <summary>A reference to the VSS context.</summary>
+
 public:
-	vssBackup();
-	~vssBackup();
+	VssBackup();
+	~VssBackup();
+
+	//static VssBackup *getInstance()
+	//{
+	//	if (pInstance == NULL)
+	//	{
+	//		pInstance = new VssBackup();
+	//	}
+
+	//	return pInstance;
+	//}
+
+	int startBackUp(COptions options);
 };
 
