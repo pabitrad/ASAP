@@ -1,0 +1,29 @@
+﻿Build started 08-03-2015 15:43:56.
+     1>Project "E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\ASAP\ASAP.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /GL /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\ASAP.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /errorReport:prompt /clr:nostdlib MainForm.cpp
+         MainForm.cpp
+     1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(20): warning C4677: 'Jobs': signature of non-private member contains assembly private type 'ASAP::JobHandler'
+                 e:\projects\freelancer\vss\asap\asap\asap\asap\jobHandler.h(8) : see declaration of 'ASAP::JobHandler'
+     1>e:\projects\freelancer\vss\asap\asap\asap\asap\MainForm.h(31): warning C4677: 'Job': signature of non-private member contains assembly private type 'ASAP::JobStruct'
+                 e:\projects\freelancer\vss\asap\asap\asap\asap\JobStruct.h(8) : see declaration of 'ASAP::JobStruct'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\x64\Debug\ASAP.exe" /INCREMENTAL /NOLOGO vss_uuid.lib vssapi.lib msxml2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:x64\Debug\ASAP.MainForm.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\x64\Debug\ASAP.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /LTCG /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 x64\Debug\app.res
+         x64\Debug\ASAP.obj
+         x64\Debug\AssemblyInfo.obj
+         x64\Debug\DataBackUp.obj
+         x64\Debug\FlatBackup.obj
+         x64\Debug\JobHandler.obj
+         x64\Debug\JobStruct.obj
+         x64\Debug\MainForm.obj
+         x64\Debug\OneToOneBackUp.obj
+         x64\Debug\stdafx.obj
+         "x64\Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         ASAP.vcxproj -> E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\x64\Debug\ASAP.exe
+     1>Done Building Project "E:\Projects\Freelancer\VSS\ASAP\ASAP\ASAP\ASAP\ASAP.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.67
